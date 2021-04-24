@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,10 @@
 		0437C29B26343534004413EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0437C29926343534004413EB /* Main.storyboard */; };
 		0437C29D26343552004413EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0437C29C26343552004413EB /* Assets.xcassets */; };
 		0437C2A026343552004413EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0437C29E26343552004413EB /* LaunchScreen.storyboard */; };
+		0437C2AD263437B3004413EB /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0437C2AC263437B3004413EB /* BlueViewController.swift */; };
+		0437C2B0263437C9004413EB /* PurpleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0437C2AF263437C9004413EB /* PurpleViewController.swift */; };
+		0437C2B326343CDD004413EB /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0437C2B226343CDD004413EB /* TableViewController.swift */; };
+		4B963B7DC63FBBC4829E61E2 /* Pods_pagerstiptabbar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B04DC3BC549912029A525C1 /* Pods_pagerstiptabbar.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,12 @@
 		0437C29C26343552004413EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0437C29F26343552004413EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0437C2A126343552004413EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0437C2AC263437B3004413EB /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
+		0437C2AF263437C9004413EB /* PurpleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleViewController.swift; sourceTree = "<group>"; };
+		0437C2B226343CDD004413EB /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		0B04DC3BC549912029A525C1 /* Pods_pagerstiptabbar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pagerstiptabbar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		196BAA833AF7F512C6902E8F /* Pods-pagerstiptabbar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pagerstiptabbar.release.xcconfig"; path = "Target Support Files/Pods-pagerstiptabbar/Pods-pagerstiptabbar.release.xcconfig"; sourceTree = "<group>"; };
+		F140F508F63C2B3C261F5E5B /* Pods-pagerstiptabbar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pagerstiptabbar.debug.xcconfig"; path = "Target Support Files/Pods-pagerstiptabbar/Pods-pagerstiptabbar.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B963B7DC63FBBC4829E61E2 /* Pods_pagerstiptabbar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +53,8 @@
 			children = (
 				0437C29226343534004413EB /* pagerstiptabbar */,
 				0437C29126343534004413EB /* Products */,
+				D15429B47DA1E2AD53EE7235 /* Pods */,
+				DD153562C156AC744EB10AD8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +76,28 @@
 				0437C29C26343552004413EB /* Assets.xcassets */,
 				0437C29E26343552004413EB /* LaunchScreen.storyboard */,
 				0437C2A126343552004413EB /* Info.plist */,
+				0437C2AC263437B3004413EB /* BlueViewController.swift */,
+				0437C2AF263437C9004413EB /* PurpleViewController.swift */,
+				0437C2B226343CDD004413EB /* TableViewController.swift */,
 			);
 			path = pagerstiptabbar;
+			sourceTree = "<group>";
+		};
+		D15429B47DA1E2AD53EE7235 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F140F508F63C2B3C261F5E5B /* Pods-pagerstiptabbar.debug.xcconfig */,
+				196BAA833AF7F512C6902E8F /* Pods-pagerstiptabbar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		DD153562C156AC744EB10AD8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B04DC3BC549912029A525C1 /* Pods_pagerstiptabbar.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0437C2A426343552004413EB /* Build configuration list for PBXNativeTarget "pagerstiptabbar" */;
 			buildPhases = (
+				994B8899CC291A3C4A2EEFAD /* [CP] Check Pods Manifest.lock */,
 				0437C28C26343534004413EB /* Sources */,
 				0437C28D26343534004413EB /* Frameworks */,
 				0437C28E26343534004413EB /* Resources */,
+				FE5F5F8CA3547E84625D11C6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,13 +167,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		994B8899CC291A3C4A2EEFAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-pagerstiptabbar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE5F5F8CA3547E84625D11C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pagerstiptabbar/Pods-pagerstiptabbar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-pagerstiptabbar/Pods-pagerstiptabbar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-pagerstiptabbar/Pods-pagerstiptabbar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0437C28C26343534004413EB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0437C29826343534004413EB /* ViewController.swift in Sources */,
+				0437C2B326343CDD004413EB /* TableViewController.swift in Sources */,
 				0437C29426343534004413EB /* AppDelegate.swift in Sources */,
+				0437C2B0263437C9004413EB /* PurpleViewController.swift in Sources */,
+				0437C2AD263437B3004413EB /* BlueViewController.swift in Sources */,
 				0437C29626343534004413EB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +363,7 @@
 		};
 		0437C2A526343552004413EB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F140F508F63C2B3C261F5E5B /* Pods-pagerstiptabbar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +383,7 @@
 		};
 		0437C2A626343552004413EB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 196BAA833AF7F512C6902E8F /* Pods-pagerstiptabbar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
